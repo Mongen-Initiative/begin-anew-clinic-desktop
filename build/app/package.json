@@ -1,0 +1,19 @@
+{
+  "name": "begin-anew-clinic-desktop",
+  "productName": "Begin Anew Clinic System",
+  "version": "0.1.0",
+  "description": "Desktop application to manage data for Begin Anew Clinics",
+  "main": "./dist/main/main.js",
+  "author": {
+    "name": "Mongen Initiative Maintainers",
+    "email": "mongeninitiative@gmail.com",
+    "url": "https://github.com/begin-anew-clinic-desktop"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../../.erb/scripts/babel-register.js ../../.erb/scripts/electron-rebuild.js",
+    "link-modules": "node -r ../../.erb/scripts/babel-register.js ../../.erb/scripts/link-modules.js",
+    "postinstall": "yarn electron-rebuild && yarn link-modules"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {}
+}
