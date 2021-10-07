@@ -82,8 +82,8 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "begin-anew-clinic-desktop",
-      "repo": "begin-anew-clinic-desktop"
+      "owner": "Mongen-Initiative",
+      "repo": " begin-anew-clinic-desktop"
     }
   },
   "repository": {
