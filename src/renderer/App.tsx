@@ -1,13 +1,13 @@
 import React from 'react';
 import { MemoryRouter as Router, Switch, Route } from 'react-router-dom';
-import MainDrawer from './pages/MainDrawer';
+import Login from './pages/login';
 // import icon from '../../assets/icon.svg';
 // import './App.global.css';
 
 const Hello = () => {
   return (
     <div>
-      <MainDrawer />
+      <Login />
     </div>
   );
 };
