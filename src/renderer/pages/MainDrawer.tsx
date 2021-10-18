@@ -11,6 +11,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import icon from '../../../assets/icons/64x64.png';
 
 const drawerWidth = 240;
 
@@ -18,6 +19,9 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       display: 'flex',
+    },
+    appLogo: {
+      zIndex: theme.zIndex.drawer + 1,
     },
     appBar: {
       zIndex: theme.zIndex.drawer + 1,
@@ -47,6 +51,7 @@ export default function MainDrawer() {
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
+          <img src={icon} className={classes.appLogo} alt="Begin Anew logo"/>
           <Typography variant="h6" noWrap>
             Kasozi Clinic
           </Typography>
