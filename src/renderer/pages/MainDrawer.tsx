@@ -51,7 +51,7 @@ export default function MainDrawer() {
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
-          <img src={icon} className={classes.appLogo} alt="Begin Anew logo"/>
+          <img src={icon} className={classes.appLogo} alt="Begin Anew logo" />
           <Typography variant="h6" noWrap>
             Kasozi Clinic
           </Typography>
