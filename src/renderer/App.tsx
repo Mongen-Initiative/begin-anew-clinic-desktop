@@ -10,6 +10,7 @@ import icon from '../../assets/icons/48x48.png';
 import Patients from './pages/Patients';
 import Pharmacy from './pages/Pharmacy';
 import PatientDetails from './pages/PatientDetails';
+import Login from './pages/Login';
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -55,7 +56,9 @@ export default function App() {
               Kasozi Clinic 
             </Typography>
             <Divider orientation="vertical" flexItem />
-            <IconButton style={{float:"right", right:"30px", position:"absolute"}}><AccountCircleIcon/></IconButton>
+            <Link to="login" className = {classes.menuText}>
+            <IconButton style={{float:"right", right:"30px", marginTop:"-25px", position:"absolute"}}><AccountCircleIcon/></IconButton>
+            </Link>
           </Toolbar>
         </AppBar>
         <Drawer
@@ -101,6 +104,7 @@ export default function App() {
               <Route path="/patients"  exact component={Patients} />
               <Route path="/pharmacy"  component={Pharmacy} />
               <Route path={`/patient/details`}  component={PatientDetails} />
+              <Route path={`/login`}  component={Login} />
             </Switch>
         </main>
       </div>

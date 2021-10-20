@@ -17,7 +17,6 @@ const useStyles = makeStyles(() =>
       flexGrow: 1,
       margin: 'auto',
       width: '50%',
-      padding: '300px',
     }
   })
 );
