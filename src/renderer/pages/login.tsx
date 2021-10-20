@@ -9,9 +9,6 @@ const useStyles = makeStyles(() =>
       display: 'flex',
     },
     textField: {
-      // margin: "auto",
-      // width: "50%",
-      // padding: "10px"
       display: 'flex',
       justifyContent: 'center',
       marginTop: '30px',
@@ -21,7 +18,7 @@ const useStyles = makeStyles(() =>
       margin: 'auto',
       width: '50%',
       padding: '300px',
-    },
+    }
   })
 );
 
@@ -32,7 +29,6 @@ export default function Login() {
     <div className={classes.root}>
       <CssBaseline />
       <main className={classes.content}>
-        {/* <img src="public/logo"></img> */}
         <Typography
           style={{
             fontWeight: 'bolder',
@@ -44,13 +40,13 @@ export default function Login() {
           Kasozi Clynical System
         </Typography>
         <div className={classes.textField}>
-          <TextField id="standard-basic" label="username" variant="outlined" />
+          <TextField label="username" variant="outlined" />
         </div>
         <div className={classes.textField}>
-          <TextField id="standard-basic" label="password" variant="outlined" />
+          <TextField label="password" variant="outlined" />
         </div>
         <div style={{ textAlign: 'center', marginTop: '80px' }}>
-          <Button variant="contained">Sign in</Button>
+             <Button variant="contained" size="large"> Sign In </Button>  
         </div>
       </main>
     </div>
