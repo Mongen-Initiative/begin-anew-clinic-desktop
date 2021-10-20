@@ -1,7 +1,7 @@
 {
   "name": "begin-anew-clinic-desktop",
   "productName": "Begin Anew Clinic System",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Desktop application to manage data for Begin Anew Clinics",
   "main": "./dist/main/main.js",
   "author": {
