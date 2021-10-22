@@ -25,6 +25,7 @@ import Patients from './pages/Patients';
 import Pharmacy from './pages/Pharmacy';
 import PatientDetails from './pages/PatientDetails';
 import HomePage from './pages/HomePage';
+import Login from './pages/Login';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
