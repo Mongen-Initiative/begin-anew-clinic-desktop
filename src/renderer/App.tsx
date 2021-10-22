@@ -24,7 +24,6 @@ import icon from '../../assets/icons/48x48.png';
 import Patients from './pages/Patients';
 import Pharmacy from './pages/Pharmacy';
 import PatientDetails from './pages/PatientDetails';
-import Login from './pages/Login';
 import HomePage from './pages/HomePage';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -129,7 +128,7 @@ export default function App() {
             <Route path="/patients" exact component={Patients} />
             <Route path="/pharmacy" component={Pharmacy} />
             <Route path="/patient/details" component={PatientDetails} />
-            <Route path="/login" component={Login} />
+            {/* <Route path="/login" component={Login} /> */}
           </Switch>
         </main>
       </div>
