@@ -17,7 +17,7 @@ const useStyles = makeStyles(() =>
       flexGrow: 1,
       margin: 'auto',
       width: '50%',
-    }
+    },
   })
 );
 
@@ -45,7 +45,10 @@ export default function Login() {
           <TextField label="password" variant="outlined" />
         </div>
         <div style={{ textAlign: 'center', marginTop: '80px' }}>
-             <Button variant="contained" size="large"> Sign In </Button>  
+          <Button variant="contained" size="large">
+            {' '}
+            Sign In{' '}
+          </Button>
         </div>
       </main>
     </div>
