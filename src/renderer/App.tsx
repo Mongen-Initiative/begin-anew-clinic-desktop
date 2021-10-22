@@ -128,7 +128,7 @@ export default function App() {
             <Route path="/patients" exact component={Patients} />
             <Route path="/pharmacy" component={Pharmacy} />
             <Route path="/patient/details" component={PatientDetails} />
-            {/* <Route path="/login" component={Login} /> */}
+            <Route path="/login" component={Login} />
           </Switch>
         </main>
       </div>
