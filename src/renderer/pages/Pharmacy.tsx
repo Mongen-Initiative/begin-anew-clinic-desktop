@@ -10,6 +10,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import ControlPointIcon from '@material-ui/icons/ControlPoint';
+import icon from '../../../assets/icons/barcode.png';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -55,14 +56,30 @@ export default function Pharmacy() {
           <Typography className={classes.title}>Pharmacy</Typography>
           <Divider />
         </div>
-        <div style={{ marginTop: '12em', width: '100%' }}>
-          <div style={{ float: 'left', width: '40%', marginLeft: '20%' }}>
-            <Button size="large" variant="outlined" color="primary">
-              Scan Barcode
-            </Button>
+        <div style={{ marginTop: '8em', width: '100%' }}>
+          <div style={{ float: 'left', width: '70%' }}>
+            <Typography style={{ fontWeight: 'bolder' }}>
+              Instructions for the Barcode Scanner:
+            </Typography>
+            <Typography>1. Connect the Barcode Scanner to computer</Typography>
+            <Typography>
+              2. Click on the text field below, so that you see the cursor line
+              blinking
+            </Typography>
+            <Typography>
+              3. Find the barcode printed on the medicine box (see the example)
+            </Typography>
+            <Typography>
+              4. Scan it with your device, by pointing the laser on the barcode
+              and pressing the button on it
+            </Typography>
+            <Typography style={{ fontStyle: 'italic' }}>
+              If something doesn&#39;t work, just type the title in the box
+              below manually
+            </Typography>
           </div>
-          <div style={{ float: 'right', marginTop: '-30px', width: '55%' }}>
-            <Typography>or enter the medicament name below:</Typography>
+          <div style={{ float: 'right', width: '20%', marginTop: '-3em' }}>
+            <img src={icon} alt="Begin Anew logo" style={{ width: '100%' }} />
           </div>
         </div>
         <div style={{ width: '100%' }}>
