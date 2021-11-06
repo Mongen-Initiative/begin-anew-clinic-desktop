@@ -41,6 +41,13 @@
     ],
     "afterSign": ".erb/scripts/notarize.js",
     "mac": {
+      "target": {
+        "target": "default",
+        "arch": [
+          "arm64",
+          "x64"
+        ]
+      },
       "type": "distribution",
       "hardenedRuntime": true,
       "entitlements": "assets/entitlements.mac.plist",
@@ -73,9 +80,9 @@
       "category": "Development"
     },
     "directories": {
-      "app": "build/app",
+      "app": "release/app",
       "buildResources": "assets",
-      "output": "build/release"
+      "output": "release/build"
     },
     "extraResources": [
       "./assets/**"
