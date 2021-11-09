@@ -26,6 +26,7 @@ import Pharmacy from './pages/Pharmacy';
 import PatientDetails from './pages/PatientDetails';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
+import UserManager from './pages/UserManager';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -119,6 +120,15 @@ export default function App() {
                 </MenuItem>
               </Link>
               <Divider />
+              <Link to="/user/manager" className={classes.menuText}>
+                <MenuItem>
+                  <ListItemIcon>
+                    <MailIcon fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>User Manager</ListItemText>
+                </MenuItem>
+              </Link>
+              <Divider />
             </MenuList>
           </div>
         </Drawer>
@@ -130,6 +140,7 @@ export default function App() {
             <Route path="/pharmacy" component={Pharmacy} />
             <Route path="/patient/details" component={PatientDetails} />
             <Route path="/login" component={Login} />
+            <Route path="/user/manager" component={UserManager} />
           </Switch>
         </main>
       </div>

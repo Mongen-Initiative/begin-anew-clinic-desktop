@@ -2,6 +2,7 @@ import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { Button, TextField, Typography } from '@material-ui/core';
+import UserGrid from 'renderer/components/UserManager/UserGrid';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -21,7 +22,7 @@ const useStyles = makeStyles(() =>
   })
 );
 
-export default function Login() {
+export default function UserManager() {
   const classes = useStyles();
 
   return (
@@ -36,20 +37,9 @@ export default function Login() {
             marginBottom: '60px',
           }}
         >
-          Kasozi Clynical System
+          User Management
         </Typography>
-        <div className={classes.textField}>
-          <TextField label="username" variant="outlined" />
-        </div>
-        <div className={classes.textField}>
-          <TextField label="password" type="password" variant="outlined" />
-        </div>
-        <div style={{ textAlign: 'center', marginTop: '80px' }}>
-          <Button variant="contained" size="large">
-            {' '}
-            Sign In{' '}
-          </Button>
-        </div>
+        <UserGrid />
       </main>
     </div>
   );
