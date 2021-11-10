@@ -3,6 +3,7 @@ import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Button, TextField, Typography } from '@mui/material';
+import UserGrid from 'renderer/components/UserManager/UserGrid';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -22,7 +23,7 @@ const useStyles = makeStyles(() =>
   })
 );
 
-export default function Login() {
+export default function UserManager() {
   const classes = useStyles();
 
   return (
@@ -37,20 +38,9 @@ export default function Login() {
             marginBottom: '60px',
           }}
         >
-          Kasozi Clynical System
+          User Management
         </Typography>
-        <div className={classes.textField}>
-          <TextField label="username" variant="outlined" />
-        </div>
-        <div className={classes.textField}>
-          <TextField label="password" type="password" variant="outlined" />
-        </div>
-        <div style={{ textAlign: 'center', marginTop: '80px' }}>
-          <Button variant="contained" size="large">
-            {' '}
-            Sign In{' '}
-          </Button>
-        </div>
+        <UserGrid />
       </main>
     </div>
   );

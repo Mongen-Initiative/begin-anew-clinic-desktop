@@ -1,14 +1,15 @@
 import React from 'react';
-import { createStyles, makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import CssBaseline from '@mui/material/CssBaseline';
 import {
   Button,
   Divider,
   IconButton,
   TextField,
   Typography,
-} from '@material-ui/core';
-import ControlPointIcon from '@material-ui/icons/ControlPoint';
+} from '@mui/material';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import {
   Link,
   MemoryRouter as Router,

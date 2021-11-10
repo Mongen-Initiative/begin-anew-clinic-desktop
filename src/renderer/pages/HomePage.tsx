@@ -1,6 +1,7 @@
 import React from 'react';
-import { createStyles, makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import CssBaseline from '@mui/material/CssBaseline';
 import {
   Divider,
   Grid,
@@ -8,7 +9,7 @@ import {
   ListItem,
   Paper,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 
 const useStyles = makeStyles(() =>
   createStyles({
