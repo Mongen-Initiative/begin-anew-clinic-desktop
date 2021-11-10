@@ -253,8 +253,17 @@
     "yarn-deduplicate": "^3.1.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@mui/icons-material": "^5.1.0",
+    "@mui/material": "^5.1.0",
+    "@mui/styles": "^5.1.0",
+    "@mui/x-data-grid": "^4.0.2",
+    "@mui/x-data-grid-generator": "^4.0.2",
+    "@mui/x-data-grid-pro": "^4.0.2",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.3.5",
     "electron-updater": "^4.3.8",
@@ -262,7 +271,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
-    "regenerator-runtime": "^0.13.9"
+    "regenerator-runtime": "^0.13.9",
+    "swr": "^1.0.1"
   },
   "devEngines": {
     "node": ">=10.x",

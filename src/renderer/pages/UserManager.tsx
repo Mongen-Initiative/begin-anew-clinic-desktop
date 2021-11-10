@@ -1,7 +1,8 @@
 import React from 'react';
-import { createStyles, makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { Button, TextField, Typography } from '@material-ui/core';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { Button, TextField, Typography } from '@mui/material';
 import UserGrid from 'renderer/components/UserManager/UserGrid';
 
 const useStyles = makeStyles(() =>

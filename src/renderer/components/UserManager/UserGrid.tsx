@@ -1,52 +1,63 @@
 import * as React from 'react';
-import { styled } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import { DataGrid } from '@mui/x-data-grid';
+// import { randomCreatedDate, randomUpdatedDate } from '@mui/x-data-grid-generator';
 
-const Item = styled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
+const rows = [
+  {
+    id: 1,
+    name: 'Damien',
+    age: 25,
+    dateCreated: '22 Nov 2021',
+    lastLogin: '22 Nov 2021',
+    isAdmin: true,
+    country: 'Spain',
+  },
+  {
+    id: 2,
+    name: 'Nicolas',
+    age: 36,
+    dateCreated: '22 Nov 2021',
+    lastLogin: '22 Nov 2021',
+    isAdmin: true,
+    country: 'France',
+  },
+  {
+    id: 3,
+    name: 'Kate',
+    age: 19,
+    dateCreated: '22 Nov 2021',
+    lastLogin: '22 Nov 2021',
+    isAdmin: false,
+    country: 'Brazil',
+  },
+];
 
-function FormRow() {
+export default function ColumnTypesGrid() {
   return (
-    <>
-      <Grid item xs={4}>
-        <Item>Jhon Jhonson</Item>
-      </Grid>
-      <Grid item xs={4}>
-        <Item>john.johnson@gmail.com</Item>
-      </Grid>
-      <Grid item xs={4}>
-        <Item>Active</Item>
-      </Grid>
-      <Grid item xs={4}>
-        <Item>Medic</Item>
-      </Grid>
-      <Grid item xs={4}>
-        <Item>Reset password</Item>
-      </Grid>
-    </>
-  );
-}
-
-export default function UserGrid() {
-  return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={1}>
-        <Grid container item spacing={3}>
-          <FormRow />
-        </Grid>
-        <Grid container item spacing={3}>
-          <FormRow />
-        </Grid>
-        <Grid container item spacing={3}>
-          <FormRow />
-        </Grid>
-      </Grid>
-    </Box>
+    <div style={{ height: 300, width: '100%' }}>
+      <DataGrid
+        columns={[
+          { field: 'name', type: 'string' },
+          { field: 'age', type: 'number' },
+          { field: 'dateCreated', type: 'date', width: 130 },
+          { field: 'lastLogin', type: 'dateTime', width: 180 },
+          { field: 'isAdmin', type: 'boolean', width: 120 },
+          {
+            field: 'country',
+            type: 'singleSelect',
+            width: 150,
+            valueOptions: [
+              'Bulgaria',
+              'Netherlands',
+              'France',
+              'United Kingdom',
+              'Spain',
+              'Brazil',
+            ],
+          },
+        ]}
+        rows={rows}
+      />
+    </div>
   );
 }

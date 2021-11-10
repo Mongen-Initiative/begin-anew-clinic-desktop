@@ -1,7 +1,7 @@
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import TextField, { TextFieldProps } from '@material-ui/core/TextField';
-import Autocomplete, { createFilterOptions } from '@material-ui/';
+import TextField, { TextFieldProps } from '@mui/material/TextField';
+import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
 import getUsers from 'renderer/data/Users';
 
 const filter = createFilterOptions<CountryType>();
